@@ -1,50 +1,92 @@
-# React + TypeScript + Vite
+# The Full Moon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**The Full Moon** is a web application that calculates and displays the date of the next full moon based on a user-selected month and year. Built with TypeScript, ReactJS, and styled with TailwindCSS, this app provides a clean and modern user experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Date Calculation**: Finds the full moon date for a given month and year.
+- **Moon Names**: Displays the traditional name of the full moon based on the month.
+- **Responsive Design**: Built with TailwindCSS for a responsive and visually appealing interface.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **TypeScript**: For type-safe JavaScript.
+- **ReactJS**: For building the user interface.
+- **TailwindCSS**: For styling and layout.
 
-- Configure the top-level `parserOptions` property like this:
+## Setup and Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Follow these steps to set up and run the project on your local machine:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/GideonBature/the-full-moon.git
+cd the-full-moon
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Make sure you have [Node.js](https://nodejs.org/) installed. Then, run the following command to install the required dependencies:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+### 3. Environment Variables
+
+This project does not require any specific environment variables. Simply ensure you have a `.env` file for any future configuration needs.
+
+### 4. Run the Development Server
+
+Start the development server with:
+
+```bash
+npm start
+```
+
+This will open the application in your default web browser at `http://localhost:3000`.
+
+### 5. Build for Production
+
+To create a production build, use:
+
+```bash
+npm run build
+```
+
+This will generate a `build` folder with the production-ready files.
+
+## Usage
+
+1. **Enter Year and Month**: Use the input field to select a year and month (format: `YYYY-MM`).
+2. **Find Full Moon**: Click the "Find Full Moon" button to calculate the full moon date for the selected period.
+3. **View Results**: The full moon date and its traditional name will be displayed.
+
+## Project Structure
+
+- **`public/`**: Static assets, including images and favicon.
+- **`src`**: Contains the main source code.
+  - **`components/`**: React components for the application.
+  - **`App.css`**: TailwindCSS configuration and custom styles.
+  - **`index.css`**: TailwindCSS configuration and custom styles.
+  - **`App.tsx`**: Main application component.
+  - **`main.tsx`**: React Entry point.
+  - **`fullMoonCalculation.ts`**: Utility functions for moon date calculations.
+- **`tailwind.config.js`**: TailwindCSS configuration file.
+- **`tsconfig.json`**: TypeScript configuration file.
+- **`package.json`**: Project metadata and dependencies.
+
+## Contributing
+
+Feel free to contribute to this project by submitting issues or pull requests. For significant changes, please open an issue first to discuss your ideas.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- **Astronomy Engine**: For moon phase calculations.
+- **TailwindCSS**: For styling.
+- **ReactJS**: For building the user interface.

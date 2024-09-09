@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MoonIcon } from 'lucide-react';
-import { getFullMoonForMonth } from './fullMoonCalculation'; // Assuming your moon calculation is in a separate file
+import { getFullMoonForMonth } from '../fullMoonCalculation'; // Assuming your moon calculation is in a separate file
 
 const FULL_MOON_NAMES: { [key: number]: string } = {
   1: "Wolf Moon",

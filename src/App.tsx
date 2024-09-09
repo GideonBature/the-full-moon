@@ -1,5 +1,5 @@
 import React from 'react';
-import FullMoonApp from './FullMoonApp';
+import FullMoonApp from './components/FullMoonApp';
 
 const App: React.FC = () => {
   return (

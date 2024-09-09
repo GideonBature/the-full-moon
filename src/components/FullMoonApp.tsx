@@ -35,7 +35,7 @@ const FullMoonApp: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-cover bg-center flex items-center justify-center" style={{backgroundImage: "url('../public/images/bg.jpg')"}}>
+    <div className="min-h-screen bg-cover bg-center flex items-center justify-center" style={{backgroundImage: "url('/images/bg.jpg')"}}>
       <div className="bg-black bg-opacity-70 p-8 rounded-lg text-white max-w-md w-full">
         <h1 className="text-3xl font-bold mb-6 text-center">The Full Moon</h1>
         <form onSubmit={handleSubmit} className="mb-6">

@@ -57,7 +57,7 @@ const FullMoonApp: React.FC = () => {
               Full Moon Date: {fullMoonDate}
             </p>
             <p className="text-lg">
-              Moon Name: {FULL_MOON_NAMES[new Date(fullMoonDate).getMonth() + 1]}
+              Moon Name: {FULL_MOON_NAMES[parseInt(fullMoonDate.split('/')[1])]}
             </p>
           </div>
         )}

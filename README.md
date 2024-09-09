@@ -42,10 +42,10 @@ This project does not require any specific environment variables. Simply ensure 
 Start the development server with:
 
 ```bash
-npm start
+npm run dev
 ```
 
-This will open the application in your default web browser at `http://localhost:3000`.
+This will open the application in your default web browser at `http://localhost:5173/`.
 
 ### 5. Build for Production
 
